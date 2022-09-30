@@ -61,7 +61,7 @@ const controlSearchResults = async function () {
   }
 };
 
-console.log(test);
+// console.log(test);
 
 const controlPagination = function (goToPage) {
   // console.log(goToPage);
@@ -126,6 +126,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function () {
+  console.log('NEw feature');
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   recipeView.addHandlerRender(controlRecipes);
@@ -134,6 +138,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 
 init();
